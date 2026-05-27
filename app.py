@@ -71,15 +71,31 @@ with st.form("formulario_contacto", clear_on_submit=True):
     # Botón de envío
     boton_enviar = st.form_submit_button("Enviar Solicitud 🚀")
 
-# Lógica al presionar el botón
+# --- LÓGICA DE ENVÍO A WHATSAPP ---
 if boton_enviar:
     if nombre and telefono and servicios_interes:
-        st.success(f"¡Gracias, {nombre}! Hemos recibido tu solicitud para: {', '.join(servicios_interes)}. Nos comunicaremos al {telefono} muy pronto.")
+        # 🚨 CAMBIA ESTE NÚMERO POR EL TUYO REAL (Ej: "5215512345678" -> Código país + número sin espacios ni +)
+        NUMERO_WHATSAPP = "55 4965 7817" 
         
-        # AQUÍ puedes agregar código para guardar los datos en una base de datos, 
-        # enviarte un correo automático o generar un link directo a tu WhatsApp.
+        # Estructuramos el mensaje de texto ordenado para tu WhatsApp
+        texto_mensaje = (
+            f"¡Hola! Me gustaría una cotización.\n\n"
+            f"👤 Nombre: {nombre}\n"
+            f"📞 Teléfono: {telefono}\n"
+            f"🧽 Servicios: {', '.join(servicios_interes)}\n"
+            f"📝 Detalles: {detalles if detalles else 'Ninguno'}"
+        )
+        
+        # Codificamos el texto para que la URL funcione en internet de forma segura
+        import urllib.parse
+        mensaje_codificado = urllib.parse.quote(texto_mensaje)
+        url_whatsapp = f"https://wa.me/{NUMERO_WHATSAPP}?text={mensaje_codificado}"
+        
+        # Mostramos el botón azul brillante para redirigir al cliente
+        st.success("¡Formulario procesado con éxito!")
+        st.link_button("👉 Enviar cotización por WhatsApp", url_whatsapp, type="primary")
     else:
-        st.error("Por favor, llena los campos obligatorios (Nombre, Teléfono y Servicios).")
+        st.error("Por favor, llena los campos obligatorios antes de enviar.")
 
 # --- PIE DE PÁGINA ---
 st.write("---")
