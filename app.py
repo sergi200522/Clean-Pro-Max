@@ -74,10 +74,9 @@ with st.form("formulario_contacto", clear_on_submit=True):
 # --- LÓGICA DE ENVÍO A WHATSAPP ---
 if boton_enviar:
     if nombre and telefono and servicios_interes:
-        # 🚨 CAMBIA ESTE NÚMERO POR EL TUYO REAL (Ej: "5215512345678" -> Código país + número sin espacios ni +)
-        NUMERO_WHATSAPP = "55 4965 7817" 
+        # 🚨 CAMBIA ESTE NÚMERO: Pon el tuyo directo (ej: "525512345678" para México)
+        NUMERO_WHATSAPP = "525549657817" 
         
-        # Estructuramos el mensaje de texto ordenado para tu WhatsApp
         texto_mensaje = (
             f"¡Hola! Me gustaría una cotización.\n\n"
             f"👤 Nombre: {nombre}\n"
@@ -86,12 +85,12 @@ if boton_enviar:
             f"📝 Detalles: {detalles if detalles else 'Ninguno'}"
         )
         
-        # Codificamos el texto para que la URL funcione en internet de forma segura
         import urllib.parse
         mensaje_codificado = urllib.parse.quote(texto_mensaje)
+        
+        # Usamos el formato directo oficial que nunca falla
         url_whatsapp = f"https://wa.me/{NUMERO_WHATSAPP}?text={mensaje_codificado}"
         
-        # Mostramos el botón azul brillante para redirigir al cliente
         st.success("¡Formulario procesado con éxito!")
         st.link_button("👉 Enviar cotización por WhatsApp", url_whatsapp, type="primary")
     else:
