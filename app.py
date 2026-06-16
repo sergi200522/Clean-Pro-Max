@@ -38,10 +38,9 @@ with col1:
     st.write("Eliminación de manchas profundas y desinfección de todo tipo de telas.")
 
 with col2:
-    st.image("https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=400", caption="Sillas de Comedor / Oficina")
+    st.image("https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=400", caption="Sillas de Comedor / Oficina")
     st.markdown("**Sillas y Bancos**")
     st.write("Limpieza a detalle para que tus sillas luzcan impecables nuevamente.")
-
 with col3:
     st.image("https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=400", caption="Tapetes y Alfombras")
     st.markdown("**Tapetes y Alfombras**")
