@@ -46,20 +46,6 @@ with col3:
     st.markdown("**Tapetes y Alfombras**")
     st.write("Tratamiento especial para cuidar las fibras y revivir los colores.")
 
-# Segunda fila de servicios (Nuevos servicios de Madera y Mármol)
-st.write("")
-col4, col5 = st.columns(2)
-
-with col4:
-    st.image("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=500", caption="Tratamiento de Madera")
-    st.markdown("**Limpieza y Nutrido de Madera**")
-    st.write("Eliminamos suciedad acumulada y devolvemos el brillo natural a tus muebles y pisos de madera.")
-
-with col5:
-    st.image("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=500", caption="Pulido Profesional")
-    st.markdown("**Pulido y Abrillantado de Mármol**")
-    st.write("Remoción de rayones y sellado de pisos o cubiertas de mármol para un acabado espejo.")
-
 st.write("---")
 
 # --- FORMULARIO DE COTIZACIÓN ---
