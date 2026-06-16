@@ -38,9 +38,13 @@ with col1:
     st.write("Eliminación de manchas profundas y desinfección de todo tipo de telas.")
 
 with col2:
+
     # 📸 NUEVA IMAGEN DE SILLAS (Limpieza profesional a detalle)
+
     st.image("https://images.unsplash.com/photo-1562663474-6cbb3fee4c77?q=80&w=400", caption="Sillas de Comedor / Oficina")
+
     st.markdown("**Sillas y Bancos**")
+
     st.write("Limpieza a detalle para que tus sillas luzcan impecables nuevamente.")
 
 with col3:
