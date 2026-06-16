@@ -51,7 +51,7 @@ st.write("")
 col4, col5 = st.columns(2)
 
 with col4:
-    st.image("<a href='https://postimg.cc/dk9b0X3T' target='_blank'><img src='https://i.postimg.cc/J0wMpCWK/Gemini-Generated-Image-lzwicslzwicslzwi.png' border='0' alt='Gemini-Generated-Image-lzwicslzwicslzwi'></a>")
+    st.image("https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=500", caption="Tratamiento de Madera")
     st.markdown("**Limpieza y Nutrido de Madera**")
     st.write("Eliminamos suciedad acumulada y devolvemos el brillo natural a tus muebles y pisos de madera.")
     
