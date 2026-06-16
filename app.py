@@ -38,9 +38,9 @@ with col1:
     st.write("Eliminación de manchas profundas y desinfección de todo tipo de telas.")
 
 with col2:
-    # Reemplaza con foto de sillas
-    st.image("https://www.google.com/imgres?q=sillas&imgurl=http%3A%2F%2Fmadesa.mx%2Fcdn%2Fshop%2Ffiles%2FM0hfGgAyV-01-42565Z2TSILK-kit-2-cadeiras.jpg%3Fv%3D1711028325&imgrefurl=https%3A%2F%2Fmadesa.mx%2Fproducts%2Fkit-2-sillas-de-comedor-marron-plata-4255%3Fsrsltid%3DAfmBOopl21_nYQfj2UHMKclhmCqzW9OB2_aK8NNcUCzn615TYu8AcD9w&docid=-4qTv5_e1aMjSM&tbnid=84GDetc31IVySM&vet=12ahUKEwii9-nQnoyVAxVik2oFHTt7Hf0QnPAOegQIHBAB..i&w=1000&h=1000&hcb=2&ved=2ahUKEwii9-nQnoyVAxVik2oFHTt7Hf0QnPAOegQIHBAB")
-    st.markdown("*Sillas y Bancos*")
+    # 📸 NUEVA IMAGEN DE SILLAS (Limpieza profesional a detalle)
+    st.image("https://images.unsplash.com/photo-1562663474-6cbb3fee4c77?q=80&w=400", caption="Sillas de Comedor / Oficina")
+    st.markdown("**Sillas y Bancos**")
     st.write("Limpieza a detalle para que tus sillas luzcan impecables nuevamente.")
 
 with col3:
