@@ -59,7 +59,7 @@ with st.form("formulario_contacto", clear_on_submit=False):
     
     servicios_interes = st.multiselect(
         "¿Qué te gustaría cotizar? (Puedes seleccionar varios)",
-        ["Sillón / Sofá", "Sillas", "Tapetes / Alfombras", "Limpieza de Madera 🪵", "Pulido de Mármol ✨", "Colchones", "Interiores de auto"]
+        ["Sillón / Sofá", "Sillas", "Tapetes / Alfombras", "Colchones", "Interiores de auto"]
     )
     
     detalles = st.text_area("Cuéntanos más detalles (ej. número de plazas, metros cuadrados de mármol o tipo de mueble):")
