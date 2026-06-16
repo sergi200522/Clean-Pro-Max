@@ -46,6 +46,20 @@ with col3:
     st.markdown("**Tapetes y Alfombras**")
     st.write("Tratamiento especial para cuidar las fibras y revivir los colores.")
 
+# Segunda fila de servicios (Nuevos servicios de Madera y Mármol)
+st.write("")
+col4, col5 = st.columns(2)
+
+with col4:
+    st.image("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=500", caption="Tratamiento de Madera")
+    st.markdown("**Limpieza y Nutrido de Madera**")
+    st.write("Eliminamos suciedad acumulada y devolvemos el brillo natural a tus muebles y pisos de madera.")
+
+with col5:
+    st.image("https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=500", caption="Pulido Profesional")
+    st.markdown("**Pulido y Abrillantado de Mármol**")
+    st.write("Remoción de rayones y sellado de pisos o cubiertas de mármol para un acabado espejo.")
+
 st.write("---")
 
 # --- FORMULARIO DE COTIZACIÓN ---
@@ -59,7 +73,7 @@ with st.form("formulario_contacto", clear_on_submit=False):
     
     servicios_interes = st.multiselect(
         "¿Qué te gustaría cotizar? (Puedes seleccionar varios)",
-        ["Sillón / Sofá", "Sillas", "Tapetes / Alfombras", "Colchones", "Interiores de auto"]
+        ["Sillón / Sofá", "Sillas", "Tapetes / Alfombras", "Limpieza de Madera 🪵", "Pulido de Mármol ✨", "Colchones", "Interiores de auto"]
     )
     
     detalles = st.text_area("Cuéntanos más detalles (ej. número de plazas, metros cuadrados de mármol o tipo de mueble):")
