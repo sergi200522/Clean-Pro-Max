@@ -56,7 +56,7 @@ with col4:
     st.write("Eliminamos suciedad acumulada y devolvemos el brillo natural a tus muebles y pisos de madera.")
     
 with col5:
-    st.image("https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?q=80&w=500", caption="Pulido Profesional")
+    st.image("https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=500", caption="Pulido Profesional")
     st.markdown("**Pulido y Abrillantado de Mármol**")
     st.write("Remoción de rayones y sellado de pisos o cubiertas de mármol para un acabado espejo.")
     
