@@ -51,10 +51,10 @@ st.write("")
 col4, col5 = st.columns(2)
 
 with col4:
-    st.image("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=500", caption="Tratamiento de Madera")
+    st.image("https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=500", caption="Tratamiento de Madera")
     st.markdown("**Limpieza y Nutrido de Madera**")
     st.write("Eliminamos suciedad acumulada y devolvemos el brillo natural a tus muebles y pisos de madera.")
-
+    
 with col5:
     st.image("https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=500", caption="Pulido Profesional")
     st.markdown("**Pulido y Abrillantado de Mármol**")
